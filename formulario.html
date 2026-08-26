@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Noto+Sans:wght@500&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Honk:MORF@15&family=Noto+Sans:wght@500&family=Oldenburg&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <div id="contenedor">
+        <!------COLUMNA IZQUIERDA-->
+
+        <div id="moduloIngresaDatos">
+            <header class= "encabezadoF">
+                <h1 id="tituloF">Formulario</h1>
+            </header>
+            <form class ="form" id="formularioAlumno">
+                <label>
+                    <input class="input" type="text" id="ingresaNombre" placeholder="Nombre">
+                </label>
+                
+                <label>
+                    <input type="text" id="ingresaApellidoPat" placeholder="Apellido paterno">
+                </label>
+                
+                <label>
+                    <input type="text" id="ingresaApellidoMat" placeholder="Apellido materno">
+                </label>
+                
+                <label>
+                    <input type="text" id="ingresaCalificacion" placeholder="Calificación">
+                </label>
+                <div class="flex">
+                    <label>
+                        <button type=submit id="botonGuardar">Guardar</button>
+                    </label>
+                    <label>
+                        <button type="button" id="botonVisualizar">Visualizar tarjeta</button>
+                    </label>
+                    <label>
+                        <button type="button" id="botonLimpiar">Limpiar campos</button>
+                    </label>
+                </div>
+                <div id="tarjeta" class="card" style="display: none;">
+                    <p id="tituloTarjeta">Datos del alumno</p>
+                    <p id="nombreA">Nombre: </p>
+                    <p id="apellidoPA">Apellido Paterno: </p>
+                    <p id="apellidoMA">Apellido Materno: </p>
+                    <p id="calificacionA">Calificación: </p>
+                </div>
+            </form>
+        </div>
+        <!-------COLUMNA DERECHA-->
+        <div id="moduloMuestraDatos">
+            <header class= "encabezadoL">
+                <h2 id="encabezadoL">Lista de alumnos</h1>
+            </header>
+            <table id="tablaAlumnos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <div id="resultados">
+                <p id="promedioResultado">Promedio: </p>
+                <p id="aprobadosResultado">Aprobados: </p>
+                <p id="reprobadosResultado">Reprobados: </p>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
