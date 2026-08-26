@@ -1,0 +1,98 @@
+body {
+    width: 100%;
+    height: 100%;
+    --color: #E1E1E1;
+    background-color: #F3F3F3;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    font-family: "Noto Sans";
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    width: 100%;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+    padding: 30px;
+}
+h1 {
+    text-align: center;
+    font-family: Oldenburg;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    background-color: #355891;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #355891;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.flex button {
+    padding: 10px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: "Noto Sans";
+}
+/*-----------(muestra tabla)-----------*/
+#moduloMuestraDatos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    font-family: "Noto Sans";
+}
+
+th, td {
+    border: 1px solid #355891;
+    padding: 8px;
+    text-align: left;
+}
+
+th { 
+    background-color: #f4f4f4;
+}
+#resultados {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
