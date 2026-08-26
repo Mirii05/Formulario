@@ -71,7 +71,7 @@ function llenaArreglo(calificacionIngresada){
         width: 400,
         icon:"error",
         padding: "3em",
-        color: "#85193C"
+        color: "#A6361E"
         }).then(() => {
             ingresaNombre.value = "";
         });
@@ -186,7 +186,8 @@ function promedio() {
         sumaCalificacion += alumno.calificacion;
     });
     let promedio = sumaCalificacion / alumnos.length;
-    promedioResultado.textContent = "Promedio: " + promedio;
+    let unDecimal = promedio.toFixed(1);
+    promedioResultado.textContent = "Promedio: " + unDecimal;
     //console.log("promedio: ", promedio);
     //console.log("Alumnos:", alumnos);
 }
